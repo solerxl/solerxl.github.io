@@ -83,11 +83,11 @@
 		        
 					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/hanx-keris" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
-					<a class="qq" target="_blank" href="/1107529677" title="qq"><i class="icon-qq"></i></a>
+					<a class="qq" target="_blank" href="http://p2ycfwmco.bkt.clouddn.com/qrcode_1516590905895.jpg" title="qq"><i class="icon-qq"></i></a>
 		        
-					<a class="weixin" target="_blank" href="/xl1107529677" title="weixin"><i class="icon-weixin"></i></a>
+					<a class="weixin" target="_blank" href="http://p2ycfwmco.bkt.clouddn.com/mmqrcode1516590941849.png" title="weixin"><i class="icon-weixin"></i></a>
 		        
-					<a class="mail" target="_blank" href="/solerxl@foxmail" title="mail"><i class="icon-mail"></i></a>
+					<a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=j-zg4_r99_PP6eD34u7m46Hs4OI" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -128,11 +128,11 @@
 			        
 						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/hanx-keris" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
-						<a class="qq" target="_blank" href="/1107529677" title="qq"><i class="icon-qq"></i></a>
+						<a class="qq" target="_blank" href="http://p2ycfwmco.bkt.clouddn.com/qrcode_1516590905895.jpg" title="qq"><i class="icon-qq"></i></a>
 			        
-						<a class="weixin" target="_blank" href="/xl1107529677" title="weixin"><i class="icon-weixin"></i></a>
+						<a class="weixin" target="_blank" href="http://p2ycfwmco.bkt.clouddn.com/mmqrcode1516590941849.png" title="weixin"><i class="icon-weixin"></i></a>
 			        
-						<a class="mail" target="_blank" href="/solerxl@foxmail" title="mail"><i class="icon-mail"></i></a>
+						<a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=j-zg4_r99_PP6eD34u7m46Hs4OI" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -170,7 +170,7 @@
 <p>大佬们已经帮我们把框架敲好了，我们要做的只是安装与配置，不过里面还是遇到了不少的坑，第一篇文章，就大概地记录一下我在安装时遇到的几个问题和解决方法（<em>顺便熟悉一下markdown</em>）</p>
 <h3 id="关于安装教程"><a href="#关于安装教程" class="headerlink" title="关于安装教程"></a>关于安装教程</h3><p>我参考的是<a href="http://visugar.com/2017/08/01/20170801HexoPlugins/" target="_blank" rel="noopener">hexo从零开始到搭建</a>，教程还是比较详细的，然后里面关于访客量统计之类的拓展参考了同样是这位作者的<a href="http://visugar.com/2017/08/01/20170801HexoPlugins/" target="_blank" rel="noopener">Hexo博客添加SEO</a>。</p>
 <h3 id="坑s"><a href="#坑s" class="headerlink" title="坑s"></a>坑s</h3><p>1.在安装nodejs和git后，我遇到了这种情况<img src="http://ww3.sinaimg.cn/large/0060lm7Tly1fnpab068kpj307l05ymwz.jpg" alt="此处输入图片的描述">，<br>询问群里的学长之后，他们说可能是安装的位置不是全局，或者环境变量出了问题（<em>如果有遇到相同的问题上面的方向作参考</em>），不过以上仍然没能解决我的问题。我突然想到会不会安装完成后文件还没有完全更新，所以就<strong>重启了电脑</strong>试试。结果成功了（被自己蠢死）</p>
-<p>2.“identify npm packages no longer maintained”<br>在git中输入npm的命令，跳出来这个，原本以为是和python2,3的pip版本不同命令不同一样，结果在网上找了一圈没找到臆想中的新命令。后来发现<strong>操作目录还是停留在theme文件夹没有cd到blog的根目录</strong>，切换以后，解决问题（被自己蠢死*2）</p>
+<p>2.“identify npm packages no longer maintained”<br>在git中输入npm的命令，跳出来这个，原本以为是和python2,3的pip版本不同命令不同一样，结果在网上找了一圈没找到臆想中的新命令。后来发现<strong>操作目录还是停留在themes文件夹没有cd到blog的根目录</strong>，切换以后，解决问题（被自己蠢死*2）</p>
 <p>另外创建的blog目录一定要为空，在init初始化时，需要cd到自己创建的blog目录。可以修改git快捷方式的默认启动路径，免得每次打开都要cd，一劳永逸。</p>
 <p>3.关于主题的配置（比如头像的配置，个人联系方式等）<br>theme的github页面里作者一般都会写清楚安装的步骤，一步步下来没多大问题。不过有一个地方需要注意，就是<strong>主题的配置文件并非是blog文件夹下的公用_config.yml</strong>，而是在每个主题自己的文件夹下得_config.yml文件，因为之前有进行主目录文件相关配置，所以没有注意这个问题，导致我敲了无数次的部署更新代码，然而绝望地发现别的改动都更新了，除了头像和联系方式（被自己蠢死<em>3）
 </em>如果你遭遇了同样的问题，不妨试一试*</p>
